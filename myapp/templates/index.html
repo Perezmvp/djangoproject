@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html'%}
+{% load static %}   
+{% block content %}
+
+<!-- Music -->
+<audio autoplay>
+    <source src="{%static 'assets/autoplay.mp3'%}" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio> 
+
+<!-- Header -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Perezmvp </h1>
+    <p class="lead">La mejor pagina web de toda la web</p>
+</div>
+
+<!-- OTHER-->
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Games</h4>
+        </div>
+        <div class="card-body">
+            
+            <a class="btn btn-primary " href="video-background.html">
+                <img src="{%static 'assets/icons/directory_open_cool-0.png'%}" class="icon-16"> Dofus
+            </a>
+            <p>All things Dofus related.</p>
+            
+            <a class="btn btn-primary " href="cloud.html">
+                <img src="{%static 'assets/icons/directory_open_cool-0.png'%}" class="icon-16"> Wakfu
+            </a>
+            <p>All things Wakfu related</p>
+            
+            
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
