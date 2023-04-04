@@ -1,0 +1,58 @@
+{% extends 'layouts/base.html'%}
+{% load static %}   
+{% block content %}
+<!-- Header -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Wakfu</h1>
+    <p class="lead">Besto game</p>
+</div>
+<!-- OTHER-->
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Guia de clases</h4>
+        </div>
+        <div class="card-body">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SelatropModal">
+                <img src="{%static 'assets/void.gif'%}" width="32" height="32"> Selatrop
+            </button>
+            <p>El de los portales.</p>
+            
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PandawaModal">
+                <img src="{%static 'assets/beer.gif'%}" width="32" height="32"> Pandawa
+            </button>
+            <p>El panda borracho.</p>
+            
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ZobalModal">
+                <img src="{%static 'assets/mask.gif'%}" width="32" height="32"> Zobal
+            </button>
+            <p>El de las mascaras.</p>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="SelatropModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Selatrop</h5>
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/confused_travolta.gif" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html'%}
+{% load static %}   
+{% block content %}
+<!-- Header -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+</div>
+<!-- OTHER-->
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Games</h4>
+        </div>
+        <div class="card-body">
+            
+            <a class="btn btn-primary " href="#">
+                <img src="{%static 'assets/icons/directory_open_cool-0.png'%}" class="icon-16"> Dofus
+            </a>
+            <p>MMORPG frances</p>
+            
+            <a class="btn btn-primary " href="/games/wakfu">
+                <img src="{%static 'assets/icons/directory_open_cool-0.png'%}" class="icon-16"> Wakfu
+            </a>
+            <p>Como Dofus pero mejor</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
